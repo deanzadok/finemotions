@@ -1,0 +1,49 @@
+{
+    "MODE": "us2conf2multimidi",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_ges_calib",
+        "TRAIN_FILES": [],
+		"TEST_FILES":  ["recordings_01_playing_enrollment01_multi_playing01.h5","recordings_01_playing_enrollment02_multi_playing02.h5","recordings_01_playing_enrollment03_multi_playing03.h5",
+                        "recordings_04_playing_enrollment01_multi_playing01.h5","recordings_04_playing_enrollment02_multi_playing02.h5",
+                        "recordings_05_playing_enrollment01_multi_playing01.h5","recordings_05_playing_enrollment02_multi_playing02.h5",
+                        "recordings_06_playing_enrollment01_multi_playing01.h5","recordings_06_playing_enrollment02_multi_playing02.h5",
+                        "recordings_10_playing_enrollment01_multi_playing01.h5","recordings_10_playing_enrollment02_multi_playing02.h5",
+                        "recordings_17_playing_enrollment01_multi_playing01.h5","recordings_17_playing_enrollment02_multi_playing02.h5",
+                        "recordings_19_playing_enrollment01_multi_playing01.h5","recordings_19_playing_enrollment02_multi_playing02.h5",
+                        "recordings_20_playing_enrollment01_multi_playing01.h5","recordings_20_playing_enrollment02_multi_playing02.h5",
+                        "recordings_21_playing_enrollment01_multi_playing01.h5","recordings_21_playing_enrollment02_multi_playing02.h5",
+                        "recordings_23_playing_enrollment01_multi_playing01.h5","recordings_23_playing_enrollment02_multi_playing02.h5",
+                        "recordings_24_playing_enrollment01_multi_playing01.h5","recordings_24_playing_enrollment02_multi_playing02.h5",
+                        "recordings_25_playing_enrollment01_multi_playing01.h5","recordings_25_playing_enrollment02_multi_playing02.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "SHARE_TRAIN": 0.80,
+        "KFOLD": 4,
+        "DEV_CLASSES": 5
+    },
+    "MODEL": {
+        "TYPE": "mfm",
+        "BACKBONE": "tcn",
+        "WEIGHTS": "/mnt/walkure_public/username/models/mfm/us2conf_all/mfmunet_224res_8imgs_calib_all_conf_mp_01_st0.8_sequence_kf4/model200.ckpt",
+        "RES_LAYER": true
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 32,
+        "EPOCHS": 200,
+		"CP_INTERVAL": 10,
+        "LEARNING_RATE": 1e-3
+    },
+    "SYSTEM": {
+        "GPU": 0,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/mnt/walkure_public/username/models/mfm/us2conf2multimidi_all/mfmunet_224res_8imgs_calib_all_mp_01_st0.8_sequence_reslayer_retrained_kf4",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": true
+}

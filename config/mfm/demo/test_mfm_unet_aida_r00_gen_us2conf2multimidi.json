@@ -1,0 +1,51 @@
+{
+    "MODE": "us2conf2multimidi",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_r00",
+        "TRAIN_FILES": [],
+        "TEST_FILES":  ["recordings_00_playing_enrollment01_multi_playing01.h5","recordings_00_playing_enrollment01_multi_playing02.h5","recordings_00_playing_enrollment01_multi_playing03.h5",
+                        "recordings_00_playing_enrollment02_multi_playing05.h5","recordings_00_playing_enrollment02_multi_playing06.h5",
+                        "recordings_00_playing_enrollment03_multi_playing07.h5","recordings_00_playing_enrollment03_multi_playing08.h5","recordings_00_playing_enrollment03_multi_playing09.h5",
+                        "recordings_00_playing_enrollment04_multi_playing10.h5","recordings_00_playing_enrollment04_multi_playing11.h5",
+                        "recordings_00_playing_enrollment05_multi_playing12.h5","recordings_00_playing_enrollment05_multi_playing13.h5","recordings_00_playing_enrollment05_multi_playing14.h5",
+                        "recordings_00_playing_enrollment06_multi_playing15.h5","recordings_00_playing_enrollment06_multi_playing16.h5",
+                        "recordings_00_playing_enrollment07_multi_playing17.h5","recordings_00_playing_enrollment07_multi_playing18.h5","recordings_00_playing_enrollment07_multi_playing19.h5",
+                        "recordings_00_playing_enrollment08_multi_playing20.h5","recordings_00_playing_enrollment08_multi_playing21.h5",
+                        "recordings_00_playing_enrollment09_multi_playing22.h5","recordings_00_playing_enrollment09_multi_playing23.h5","recordings_00_playing_enrollment09_multi_playing24.h5",
+                        "recordings_00_playing_enrollment10_multi_playing25.h5","recordings_00_playing_enrollment10_multi_playing26.h5",
+                        "recordings_00_playing_enrollment11_multi_playing27.h5","recordings_00_playing_enrollment11_multi_playing28.h5",
+                        "recordings_00_playing_enrollment12_multi_playing29.h5","recordings_00_playing_enrollment12_multi_playing30.h5","recordings_00_playing_enrollment12_multi_playing31.h5",
+                        "recordings_00_playing_enrollment13_multi_playing32.h5","recordings_00_playing_enrollment13_multi_playing33.h5","recordings_00_playing_enrollment13_multi_playing34.h5",
+                        "recordings_00_playing_enrollment14_multi_playing35.h5","recordings_00_playing_enrollment14_multi_playing36.h5","recordings_00_playing_enrollment14_multi_playing37.h5",
+                        "recordings_00_playing_enrollment15_multi_playing38.h5","recordings_00_playing_enrollment15_multi_playing39.h5",
+                        "recordings_00_playing_enrollment16_multi_playing40.h5","recordings_00_playing_enrollment16_multi_playing41.h5",
+                        "recordings_00_playing_enrollment17_multi_playing42.h5","recordings_00_playing_enrollment17_multi_playing43.h5",
+                        "recordings_00_playing_enrollment18_multi_playing44.h5","recordings_00_playing_enrollment18_multi_playing45.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "DEV_CLASSES": 5,
+        "SHUFFLE": false
+    },
+    "MODEL": {
+        "TYPE": "mfm",
+        "BACKBONE": "tcn",
+        "WEIGHTS": "",
+        "RES_LAYER": true
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 1
+    },
+    "SYSTEM": {
+        "GPU": 1,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/mnt/walkure_public/username/models/mfm/us2conf2multimidi_r00_gen/mfmunet_224res_8imgs_calib_r00_multiplaying",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": true
+}

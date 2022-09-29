@@ -1,0 +1,48 @@
+{
+    "MODE": "us2multimidi",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_ges_calib",
+        "TRAIN_FILES": [],
+		"TEST_FILES":  ["recordings_01_playing_enrollment01_multi_playing01.h5","recordings_01_playing_enrollment02_multi_playing02.h5","recordings_01_playing_enrollment03_multi_playing03.h5",
+                        "recordings_04_playing_enrollment01_multi_playing01.h5","recordings_04_playing_enrollment02_multi_playing02.h5",
+                        "recordings_05_playing_enrollment01_multi_playing01.h5","recordings_05_playing_enrollment02_multi_playing02.h5",
+                        "recordings_06_playing_enrollment01_multi_playing01.h5","recordings_06_playing_enrollment02_multi_playing02.h5",
+                        "recordings_10_playing_enrollment01_multi_playing01.h5","recordings_10_playing_enrollment02_multi_playing02.h5",
+                        "recordings_17_playing_enrollment01_multi_playing01.h5","recordings_17_playing_enrollment02_multi_playing02.h5",
+                        "recordings_19_playing_enrollment01_multi_playing01.h5","recordings_19_playing_enrollment02_multi_playing02.h5",
+                        "recordings_20_playing_enrollment01_multi_playing01.h5","recordings_20_playing_enrollment02_multi_playing02.h5",
+                        "recordings_21_playing_enrollment01_multi_playing01.h5","recordings_21_playing_enrollment02_multi_playing02.h5",
+                        "recordings_23_playing_enrollment01_multi_playing01.h5","recordings_23_playing_enrollment02_multi_playing02.h5",
+                        "recordings_24_playing_enrollment01_multi_playing01.h5","recordings_24_playing_enrollment02_multi_playing02.h5",
+                        "recordings_25_playing_enrollment01_multi_playing01.h5","recordings_25_playing_enrollment02_multi_playing02.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": false,
+        "SEQUENCE": false,
+        "CD": 0.001,
+        "FK": 0.0001,
+        "FD": 0.001,
+        "RES": 224,
+        "APPEND": 1,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "SHARE_TRAIN": 0.8,
+        "DEV_CLASSES": 5,
+        "SHUFFLE": false
+    },
+    "MODEL": {
+        "TYPE": "deepnet",
+        "BACKBONE": "unet",
+        "WEIGHTS": "/mnt/walkure_public/username/models/deepnet/us2multimidi_all/deepnetunet_224res_1imgs_calib_all_multiplaying_00_st0.8_1024f/model20.ckpt"
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 1
+    },
+    "SYSTEM": {
+        "GPU": 6,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/home/username/neural-hs/neural-hs",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": false
+}

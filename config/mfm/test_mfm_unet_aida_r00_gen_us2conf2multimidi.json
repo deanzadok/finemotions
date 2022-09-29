@@ -1,0 +1,35 @@
+{
+    "MODE": "us2conf2multimidi",
+    "DATA": {
+        "PATH": "./data_sample",
+        "TRAIN_FILES": [],
+        "TEST_FILES":  ["recordings_00_playing_enrollment06_multi_playing15.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "DEV_CLASSES": 5,
+        "SHUFFLE": false,
+        "SINGLE_TEST": true
+    },
+    "MODEL": {
+        "TYPE": "mfm",
+        "BACKBONE": "tcn",
+        "WEIGHTS": "./model/model10.ckpt",
+        "RES_LAYER": true
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 1
+    },
+    "SYSTEM": {
+        "GPU": 1,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "./output",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": true
+}

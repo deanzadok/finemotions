@@ -1,0 +1,48 @@
+{
+    "MODE": "us2conf",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_ges_calib",
+        "TRAIN_FILES": [],
+		"TEST_FILES":  ["recordings_01_typing_enrollment01_multi_typing01.h5","recordings_01_typing_enrollment02_multi_typing02.h5",
+                        "recordings_04_typing_enrollment01_multi_typing01.h5","recordings_04_typing_enrollment02_multi_typing02.h5",
+                        "recordings_05_typing_enrollment01_multi_typing01.h5","recordings_05_typing_enrollment02_multi_typing02.h5",
+                        "recordings_06_typing_enrollment01_multi_typing01.h5","recordings_06_typing_enrollment02_multi_typing02.h5",
+                        "recordings_10_typing_enrollment01_multi_typing01.h5","recordings_10_typing_enrollment02_multi_typing02.h5",
+                        "recordings_17_typing_enrollment01_multi_typing01.h5","recordings_17_typing_enrollment03_multi_typing02.h5",
+                        "recordings_19_typing_enrollment01_multi_typing01.h5","recordings_19_typing_enrollment02_multi_typing02.h5",
+                        "recordings_20_typing_enrollment01_multi_typing01.h5","recordings_20_typing_enrollment02_multi_typing02.h5",
+                        "recordings_21_typing_enrollment01_multi_typing01.h5","recordings_21_typing_enrollment02_multi_typing02.h5",
+                        "recordings_23_typing_enrollment01_multi_typing01.h5","recordings_23_typing_enrollment02_multi_typing02.h5",
+                        "recordings_24_typing_enrollment01_multi_typing01.h5","recordings_24_typing_enrollment02_multi_typing02.h5",
+                        "recordings_25_typing_enrollment01_multi_typing01.h5","recordings_25_typing_enrollment02_multi_typing02.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "SHARE_TRAIN": 0.80,
+        "KFOLD": 4,
+        "DEV_CLASSES": 5
+    },
+    "MODEL": {
+        "TYPE": "mfm",
+        "BACKBONE": "tcn",
+        "WEIGHTS": ""
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 32,
+        "EPOCHS": 200,
+		"CP_INTERVAL": 10,
+        "LEARNING_RATE": 1e-3
+    },
+    "SYSTEM": {
+        "GPU": 0,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/mnt/walkure_public/username/models/mfm/us2conf_all/mfmunet_224res_8imgs_calib_all_conf_mt_01_st0.8_sequence_kf4",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": true
+}

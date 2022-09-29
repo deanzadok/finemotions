@@ -1,0 +1,38 @@
+{
+    "MODE": "us2conf",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_mt_calib",
+        "TRAIN_FILES": [],
+		"TEST_FILES":  ["recordings_10_playing_enrollment01_multi_playing01.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "CD": 0.001,
+        "FK": 0.0001,
+        "FD": 0.001,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "SHARE_TRAIN": 0.80,
+        "KFOLD": 0,
+        "DEV_CLASSES": 5,
+        "SHUFFLE": false
+    },
+    "MODEL": {
+        "TYPE": "mfm",
+        "BACKBONE": "tcn",
+        "WEIGHTS": "/mnt/walkure_public/username/models/mfm/us2conf_all/mfmunet_224res_8imgs_calib_all_conf_mp_02_st0.8_sequence_kf0/model170.ckpt"
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 1
+    },
+    "SYSTEM": {
+        "GPU": 0,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/home/username/neural-hs/neural-hs",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": false
+}

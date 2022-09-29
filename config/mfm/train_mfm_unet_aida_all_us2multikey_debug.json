@@ -1,0 +1,36 @@
+{
+    "MODE": "us2multikey",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_mt_calib",
+        "TRAIN_FILES": [],
+		"TEST_FILES":  ["recordings_01_typing_enrollment01_multi_typing01.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "SHARE_TRAIN": 0.80,
+        "DEV_CLASSES": 5
+    },
+    "MODEL": {
+        "TYPE": "mfm",
+        "BACKBONE": "tcn",
+        "WEIGHTS": ""
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 32,
+        "EPOCHS": 2000,
+		"CP_INTERVAL": 10,
+        "LEARNING_RATE": 1e-3
+    },
+    "SYSTEM": {
+        "GPU": 5,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/mnt/walkure_public/username/models/mfm/us2multikey_all/mfmunet_224res_8imgs_calib_all_multityping_00_st0.8_sequence",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": true
+}

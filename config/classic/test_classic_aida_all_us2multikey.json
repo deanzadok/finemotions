@@ -1,0 +1,50 @@
+{
+    "MODE": "us2multikey",
+    "DATA": {
+        "PATH": "/mnt/walkure_public/username/datasets/subjects/flexor_data/prepared_data_ges_calib",
+        "TRAIN_FILES": [],
+		"TEST_FILES":  ["recordings_01_typing_enrollment01_multi_typing01.h5","recordings_01_typing_enrollment02_multi_typing02.h5",
+                        "recordings_04_typing_enrollment01_multi_typing01.h5","recordings_04_typing_enrollment02_multi_typing02.h5",
+                        "recordings_05_typing_enrollment01_multi_typing01.h5","recordings_05_typing_enrollment02_multi_typing02.h5",
+                        "recordings_06_typing_enrollment01_multi_typing01.h5","recordings_06_typing_enrollment02_multi_typing02.h5",
+                        "recordings_10_typing_enrollment01_multi_typing01.h5","recordings_10_typing_enrollment02_multi_typing02.h5",
+                        "recordings_17_typing_enrollment01_multi_typing01.h5","recordings_17_typing_enrollment03_multi_typing02.h5",
+                        "recordings_19_typing_enrollment01_multi_typing01.h5","recordings_19_typing_enrollment02_multi_typing02.h5",
+                        "recordings_20_typing_enrollment01_multi_typing01.h5","recordings_20_typing_enrollment02_multi_typing02.h5",
+                        "recordings_21_typing_enrollment01_multi_typing01.h5","recordings_21_typing_enrollment02_multi_typing02.h5",
+                        "recordings_23_typing_enrollment01_multi_typing01.h5","recordings_23_typing_enrollment02_multi_typing02.h5",
+                        "recordings_24_typing_enrollment01_multi_typing01.h5","recordings_24_typing_enrollment02_multi_typing02.h5",
+                        "recordings_25_typing_enrollment01_multi_typing01.h5","recordings_25_typing_enrollment02_multi_typing02.h5"],
+        "JOINTS_VERSION": "4",
+        "TEMPORAL": true,
+        "SEQUENCE": true,
+        "CD": 0.001,
+        "FK": 0.0001,
+        "FD": 0.001,
+        "RES": 224,
+        "APPEND": 8,
+        "CHANNELS": 1,
+        "STEP": 1,
+        "STRIDE": 1,
+        "SHARE_TRAIN": 0.80,
+        "KFOLD": 3,
+        "DEV_CLASSES": 5,
+        "SHUFFLE": false
+    },
+    "MODEL": {
+        "TYPE": "perfor",
+        "BACKBONE": "",
+        "CLASSIFIER": "mlp",
+        "WEIGHTS": ""
+    },
+    "TRAINING": {
+        "BATCH_SIZE": 500
+    },
+    "SYSTEM": {
+        "GPU": 4,
+        "MEMORY_REQ": 0
+    },
+    "OUTPUT_DIR": "/mnt/walkure_public/username/models/classic/us2multikey_all/perfor_224res_8imgs_calib_all_multityping_05_st0.8_kf3",
+    "RANDOM_SEED": 1,
+    "STORE_CSV": false
+}
