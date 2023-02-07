@@ -2,9 +2,14 @@
 
 Official code repository for [https://arxiv.org/abs/2202.05204](https://arxiv.org/abs/2202.05204).  
 
-<img src="robotic_hand_demo.gif" alt="robotic_hand_demo" width="900"/>  
+<img src="materials/robotic_hand_demo.gif" alt="robotic_hand_demo" width="900"/>  
 
 *A demo showing our system connected to a robotic hand, continuously replaying notes played on the piano in real time, given only the stream of ultrasound images taken from the lower limb.*
+
+### Dataset  
+
+Our dataset is now publicly available! Please refer to this page for explanations and instructions on how to download:  
+[Dataset explanation](DATASET.md)
 
 ### System Requirements  
 
@@ -29,10 +34,6 @@ pip install -r requirements.txt
 For more information on how to manage conda environments, please refer to:  
 [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)  
   
-### Dataset  
-  
-We are currently working on receiving the acknowledgments to make our dataset public. It will be published soon here. Stay tuned!
-
   
 ### Overview  
   
